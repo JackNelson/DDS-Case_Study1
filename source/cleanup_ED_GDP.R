@@ -16,5 +16,5 @@ GDP2$GDP<-as.numeric(gsub(",", "", GDP2$GDP))
 sum(is.na(GDP2$GDP.ranking))
 sum(is.na(GDP2$GDP))
 
-#clean up the EDDATA
-#no clean up needed for our analysis
+#clean up the EDDATA-only take first 3 columns needed for analysis
+EDDATA2 <- EDDATA[,1:3]

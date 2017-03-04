@@ -10,7 +10,7 @@ Keep_md: TRUE
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 #set the working directory
-knitr::opts_knit$set(root.dir = "C:\\Users\\nmsha\\Documents\\SMU\\DoingDataScience\\homework\\CaseStudy1")
+knitr::opts_knit$set(root.dir = "/Users/JackNelson/Documents/SMU/MSDS 6306/Week8")
 #ensure all required packages are installed, and if not, install them
 list.of.packages <- c("downloader")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
@@ -25,10 +25,9 @@ In this study we will examine the Gross Domestic Product (GDP) rankings for coun
 
 ## Code used to download, tidy and merge the data
 ```{r download_tidy_merge}
-dir<-getwd()
-source(paste(dir,"/source/download.R",sep=""))
-source(paste(dir,"/source/cleanup_ED_GDP.R",sep=""))
-source(paste(dir,"/source/merge_ED_GDP.R",sep=""))
+source("source/download.R")
+source("source/cleanup_ED_GDP.R")
+source("source/merge_ED_GDP.R")
 ```
 
 ## Analysis Results

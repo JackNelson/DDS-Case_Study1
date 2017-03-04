@@ -1,5 +1,6 @@
 #merge the GDP and EDDATA datasets by country code, call the merged dataset combo, sort by CountryCode
-combo<-merge(GDP2,EDDATA, by="CountryCode", all=TRUE, SORT=TRUE)
+combo<-merge(GDP2,EDDATA2, by="CountryCode", all=TRUE, SORT=TRUE)
+# (JN) changed from EDDATA to EDDATA2 from cleanup_ED_GDP.R edit
 
 #count the number of missing Long.Name(orignally from the education data) to see how many country codes didn't match
 #from the GDP dataset
